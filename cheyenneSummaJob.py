@@ -1,11 +1,10 @@
-
 import os, shutil
 import subprocess
 
 # User-provided info
-summaexe = '/glade/p/work/manab/fcast/summa/bin/summa.exe'
+summaexe = '/glade/p/work/manab/fcast/newsumma/summa/bin/summa.exe'
 masterdir = '/glade/p/work/manab/fcast/PNW/'
-summafilemanname = 'summa_fileManager.txt'
+summafilemanname = 'summa_fileManager_new.txt'
 pbstemplatename = 'template_pbs.txt'
 restartflag = '-r never'    #Options: [y,m,d,e,never]
 logdname = 'log'
