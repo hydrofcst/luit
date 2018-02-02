@@ -29,7 +29,7 @@ if __name__ == "__main__":
         ncconvert = ncconvert.drop('averageInstantRunoff')                           #Drop the original averageInstantRunoff variable
         ncconvert['averageInstantRunoff'] = runoffarray                           #Add the new array to original netCDF
         ncconvert['averageInstantRunoff'].attrs['long_name'] = "instantaneous runoff (instant)"
-        ncconvert['averageInstantRunoff'].attrs['units'] = '-'
+        ncconvert['averageInstantRunoff'].attrs['units'] = 'm s-1'
 
         print('Step 1: Creating '+str(x+1)+ ' HRU-only SUMMA output file out of ' + str(len(outfilelist)))
         ncconvert_outfile = os.path.join(convertdir, os.path.basename(outfilelist[x]))#Create an output filename

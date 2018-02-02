@@ -4,20 +4,18 @@ import sys
 import xarray as xr
 import numpy as np
 import glob, os
-from functools import reduce #for custom search strings
+import shutil
 
 if __name__ == "__main__":
     # User supplied information
-    outdir = '/glade/p/work/manab/fcast/PNW/output/7468_dec7'                   #Directory containing SUMMA output
-    convertdir = '/glade/p/work/manab/fcast/PNW/output/7468_dec7convert/'
-    concatdir = '/glade/p/work/manab/fcast/PNW/output/7468_dec7concat/'
-    finalfile = 'paramtest7468'
-    restartfile = 'forecastrestart.nc'
-    restartstring = 'summaRestart_2017-11-26'
+    outdir = '/glade/p/work/manab/fcast/PNW/output/7468_b3bdcbb'                   #Directory containing SUMMA output
+    convertdir = 'convert'
+    finalfile = 'final.nc'
     
     # Step 1: Convert all SUMMA output files into HRU-only
+    convertdir = os.path.join(outdir, convertdir)
+    os.makedirs(convertdir, exist_ok = True)
     outfilelist = glob.glob((outdir+'/*.nc')) #list of all files
-    outfilelist = [x for x in outfilelist if "summaRestart" not in x] #Remove Restart files
 
     for x in range(0, len(outfilelist)):
         ncconvert = xr.open_dataset(outfilelist[x])                                  #Import netCDF file
@@ -27,7 +25,7 @@ if __name__ == "__main__":
         ncconvert = ncconvert.drop('averageInstantRunoff')                           #Drop the original averageInstantRunoff variable
         ncconvert['averageInstantRunoff'] = runoffarray                           #Add the new array to original netCDF
         ncconvert['averageInstantRunoff'].attrs['long_name'] = "instantaneous runoff (instant)"
-        ncconvert['averageInstantRunoff'].attrs['units'] = '-'
+        ncconvert['averageInstantRunoff'].attrs['units'] = 'm s-1'
 
         print('Step 1: Creating '+str(x+1)+ ' HRU-only SUMMA output file out of ' + str(len(outfilelist)))
         ncconvert_outfile = os.path.join(convertdir, os.path.basename(outfilelist[x]))#Create an output filename
@@ -42,6 +40,9 @@ if __name__ == "__main__":
     ncconcat_time['hruId'] = ncconcat_time['hruId'].isel(time=0, drop=True)  #Dropping extra time dimension from hruId
 
     print('Step 2: Concatenating GRUset')
-    timeconcatfile = os.path.join(concatdir, (finalfile+'.nc'))
-    ncconcat_time.to_netcdf(timeconcatfile, 'w')
+    finalfilename = os.path.join(outdir, finalfile)
+    ncconcat_time.to_netcdf(finalfilename, 'w')
+
+    print('Deleting folder and contents of convert')
+    shutil.rmtree(convertdir)
 
