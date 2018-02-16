@@ -8,7 +8,7 @@ import shutil
 
 if __name__ == "__main__":
     # User supplied information
-    outdir = '/glade/p/work/manab/fcast/PNW/output/7468_b3bdcbb'                   #Directory containing SUMMA output
+    outdir = '/glade/p/work/manab/fcast/PNW/output/7468_dec7'                   #Directory containing SUMMA output
     convertdir = 'convert'
     finalfile = 'final.nc'
     
