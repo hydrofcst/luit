@@ -23,10 +23,10 @@ def concatHRUspatially(outdir, outfile):
         ncconvert['averageInstantRunoff'].attrs['long_name'] = "instantaneous runoff (instant)"
         ncconvert['averageInstantRunoff'].attrs['units'] = 'm s-1'
 
-        print('Step 1: Creating '+str(count+1)+ ' HRU-only SUMMA output file out of ' + str(len(outfilelist)))
         ncconvert_outfile = os.path.join(convertdir, os.path.basename(outfilelist[count]))#Create an output filename
         ncconvert.to_netcdf(ncconvert_outfile, 'w') 
         
+    print('Created '+str(count+1)+ ' HRU-only SUMMA output file out of ' + str(len(outfilelist)))
     spacefilelist = glob.glob(convertdir+'/*.nc')
     spacefilelist.sort()
     
@@ -34,9 +34,10 @@ def concatHRUspatially(outdir, outfile):
 
     concatfilename = os.path.join(outdir, outfile)   #Full dir + name of the final concatenated file
 
+
     ncconcat_space.to_netcdf(concatfilename, 'w')
 
-    print('Step 2: Deleting temporary convert directory!')
     shutil.rmtree(convertdir)
+    print('Deleted temporary convert directory!')
 
     return concatfilename
