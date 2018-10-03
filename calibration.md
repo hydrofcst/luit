@@ -42,9 +42,41 @@
 * 06276500 Greybull R at Meeteetse (depleted)
 
 ## Steps
-* Observations processed
+* All calib basins work situated here: `/gpfs/fs1/work/manab/fcast/basins`
+* Convert USGS lat-long from DMS to Decimal Degrees using this tool: `https://www.latlong.net/degrees-minutes-seconds-to-decimal-degrees`
 
-# 06279940 North Fork Shoshone near Wapiti
+### 06279940 North Fork Shoshone near Wapiti
 * https://waterdata.usgs.gov/wy/nwis/nwismap/?site_no=06279940&agency_cd=USGS
+* Latitude  44°28'11", Longitude 109°25'47", 
+* Lat, long: 44.4697222, -109.42972222
+* Hydrologic Unit Code 10080012
 
+### 06280300 South Fork Shoshone near Valley
+* https://waterdata.usgs.gov/nwis/inventory/?site_no=06280300&agency_cd=USGS
+* Latitude 44°12'28.4",   Longitude 109°33'18.9"  
+* 44.20788889, -109.55527778
 
+### 06218500 Wind River nr Dubois
+* https://waterdata.usgs.gov/nwis/inventory/?site_no=06218500&agency_cd=USGS
+* Latitude 43°34'43",   Longitude 109°45'33" 
+* 43.57861111, -109.75916667
+
+### 06224000 Bull Lake Creek ab Bull Lake
+* https://waterdata.usgs.gov/nwis/inventory/?site_no=06224000&agency_cd=USGS
+* Latitude 43°10'35.8",   Longitude 109°12'09.2" 
+* 43.17661111, -109.20250000
+
+### 06221400 Dinwoody Creek above Lakes nr Burris
+* https://waterdata.usgs.gov/wy/nwis/inventory/?site_no=06221400&agency_cd=
+* Latitude 43°20'46.2",   Longitude 109°24'31.6"
+* 43.34616667, -109.40888889
+
+### 06278500 Shell Creek nr Shell
+* https://waterdata.usgs.gov/nwis/inventory/?site_no=06278500&agency_cd=USGS 
+* Latitude 44°33'54",   Longitude 107°42'44"
+* 43.56500000, -107.71222222
+
+###  06276500 Greybull R at Meeteetse
+* https://waterdata.usgs.gov/nwis/inventory/?site_no=06276500&agency_cd=USGS
+* Latitude 44°09'30.7",   Longitude 108°52'21.3"  
+* 44.15852778, -108.87250000  
