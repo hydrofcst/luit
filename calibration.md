@@ -70,7 +70,11 @@
     '100800120201', '100800120202', '100800120203', '100800120204', '100800120205', '100800120206', '100800120207', '100800120208', '100800120209', 
     '100800120301', '100800120302', '100800120303')
     ```
-    * t
+    * Save layer -> Select only selected features -> Save as gpkg. Also save as shapefile
+* One of the regions for NHDPlusv2 (e.g. CATCHMENT_MS_10U and Flowline_MS_10U):
+    * Subset for the above region
+    * Save both as gpkp and shapefile 
+
 
 ### 06279940 North Fork Shoshone near Wapiti
 * https://waterdata.usgs.gov/wy/nwis/nwismap/?site_no=06279940&agency_cd=USGS
