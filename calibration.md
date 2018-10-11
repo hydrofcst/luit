@@ -41,8 +41,8 @@
 * 06278500 Shell Creek nr Shell (almost undepleted, small reservoir above)
 * 06276500 Greybull R at Meeteetse (depleted)
 
-## Workflow
-### SUMMA
+# Workflow
+## SUMMA
 * All calib basins work situated here: `/gpfs/fs1/work/manab/fcast/basins`
 * Convert USGS lat-long from DMS to Decimal Degrees using this tool: https://www.latlong.net/degrees-minutes-seconds-to-decimal-degrees
 * Identify the HUC-12s using shapefiles: 1) wUS_HUC_12_Simplified 2) Flowline_MS_10U (Upper Missouri)
@@ -58,7 +58,7 @@
     * Change HRU IDs
 * TODO: Possible optimization - wrapper around all the 4 scripts above.
 
-### Routing Data Prep
+## Routing Data Prep
 * Shapefiles:
     * HUC-12
     * NHDPlusv2
@@ -82,8 +82,8 @@
     * Creates mapping file in NHDPlus folder which I transfer back to Cheyenne
 *  
 
-
-### 06279940 North Fork Shoshone near Wapiti
+# Basins
+## 06279940 North Fork Shoshone near Wapiti
 * https://waterdata.usgs.gov/wy/nwis/nwismap/?site_no=06279940&agency_cd=USGS
 * Latitude  44°28'11", Longitude 109°25'47", 
 * Lat, long: 44.4697222, -109.42972222
