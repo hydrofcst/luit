@@ -74,6 +74,13 @@
 * One of the regions for NHDPlusv2 (e.g. CATCHMENT_MS_10U and Flowline_MS_10U):
     * Subset for the above region
     * Save both as gpkp and shapefile 
+* Poly2poly
+    * Put all the basin gpkg files here: `/gpfs/fs1/work/manab/fcast/basins/route/dataprep/basins`
+    * The main package of scripts is here: `/gpfs/fs1/work/manab/fcast/basins/route/dataprep/package.2015.12.16`
+    * *NOT WORKING ON CHEYENNE DUE TO GDAL COMPATIBILITY ISSUES* 
+    * On hydro-c1: `/d3/msaharia/SHARP/package.2015.12.16/qsub_poly2poly_mnb_basins.sh`
+    * Creates mapping file in NHDPlus folder which I transfer back to Cheyenne
+*  
 
 
 ### 06279940 North Fork Shoshone near Wapiti
