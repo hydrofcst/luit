@@ -45,9 +45,18 @@
 * All calib basins work situated here: `/gpfs/fs1/work/manab/fcast/basins`
 * Convert USGS lat-long from DMS to Decimal Degrees using this tool: https://www.latlong.net/degrees-minutes-seconds-to-decimal-degrees
 * Identify the HUC-12s using shapefiles: 1) wUS_HUC_12_Simplified 2) Flowline_MS_10U (Upper Missouri)
-* Create attributes using the new script: `/gpfs/fs1/work/manab/fcast/basins/master/attributes/*_extract_attributes.py`
-* Create ColdStates file using the new script: `/gpfs/fs1/work/manab/fcast/basins/master/coldstates/*_extract_coldstates.py`
-* 
+* Attributes
+    * Create attributes using the new script: `/gpfs/fs1/work/manab/fcast/basins/master/attributes/extract_usingindices.py`
+    * Change the HRU IDs from QGIS visual inspection
+* Create ColdStates file using the new script: `/gpfs/fs1/work/manab/fcast/basins/master/coldstates/extract_usingindices.py`
+* Forcing
+    * `/gpfs/fs1/work/manab/fcast/basins/master/forcing/extract_usingindices.py`
+    * Change the outdir and script will subset for each HRU set and year
+* Param trials
+    * `/gpfs/fs1/work/manab/fcast/basins/master/paramtrials/extract_usingindices.py`
+    * Change HRU IDs
+* TODO: Possible optimization - wrapper around all the 4 scripts above.
+
 
 ### 06279940 North Fork Shoshone near Wapiti
 * https://waterdata.usgs.gov/wy/nwis/nwismap/?site_no=06279940&agency_cd=USGS
