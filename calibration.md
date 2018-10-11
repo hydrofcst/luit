@@ -61,7 +61,8 @@
 ## Routing Data Prep
 * Shapefiles:
     * HUC-12
-    * NHDPlusv2
+    * NHDPlusv2 - flowlines and polygon
+* Create basin shapefiles for flowlines and polygon by basin dileneation: `/gpfs/fs1/work/manab/fcast/pfaf_decode/scripts/get_subbasin.py`
 * `wUS_HUC_12_simplified`
     * Open in QGIS and open attribute table
     * Use expression to subset only contributing HRUs:
@@ -71,9 +72,6 @@
     '100800120301', '100800120302', '100800120303')
     ```
     * Save layer -> Select only selected features -> Save as gpkg. Also save as shapefile
-* One of the regions for NHDPlusv2 (e.g. CATCHMENT_MS_10U and Flowline_MS_10U):
-    * Subset for the above region
-    * Save both as gpkp and shapefile 
 * Poly2poly
     * Put all the basin gpkg files here: `/gpfs/fs1/work/manab/fcast/basins/route/dataprep/basins`
     * The main package of scripts is here: `/gpfs/fs1/work/manab/fcast/basins/route/dataprep/package.2015.12.16`
