@@ -41,7 +41,8 @@
 * 06278500 Shell Creek nr Shell (almost undepleted, small reservoir above)
 * 06276500 Greybull R at Meeteetse (depleted)
 
-## Steps
+## Workflow
+### SUMMA
 * All calib basins work situated here: `/gpfs/fs1/work/manab/fcast/basins`
 * Convert USGS lat-long from DMS to Decimal Degrees using this tool: https://www.latlong.net/degrees-minutes-seconds-to-decimal-degrees
 * Identify the HUC-12s using shapefiles: 1) wUS_HUC_12_Simplified 2) Flowline_MS_10U (Upper Missouri)
@@ -57,6 +58,19 @@
     * Change HRU IDs
 * TODO: Possible optimization - wrapper around all the 4 scripts above.
 
+### Routing Data Prep
+* Shapefiles:
+    * HUC-12
+    * NHDPlusv2
+* `wUS_HUC_12_simplified`
+    * Open in QGIS and open attribute table
+    * Use expression to subset only contributing HRUs:
+```
+"HUC_12"  IN ('100800120101', '100800120102', '100800120103', '100800120104', '100800120105', 
+'100800120201', '100800120202', '100800120203', '100800120204', '100800120205', '100800120206', '100800120207', '100800120208', '100800120209', 
+'100800120301', '100800120302', '100800120303')
+```
+    * 
 
 ### 06279940 North Fork Shoshone near Wapiti
 * https://waterdata.usgs.gov/wy/nwis/nwismap/?site_no=06279940&agency_cd=USGS
@@ -64,23 +78,7 @@
 * Lat, long: 44.4697222, -109.42972222
 * Hydrologic Unit Code 10080012
 * HUC-12 IDs within this basin (wUS_HUC12_simplified):
-    * 100800120301
-    * 100800120302
-    * 100800120303
-    * 100800120207
-    * 100800120206
-    * 100800120205
-    * 100800120209
-    * 100800120208
-    * 100800120101
-    * 100800120102
-    * 100800120103
-    * 100800120104
-    * 100800120202
-    * 100800120201
-    * 100800120203
-    * 100800120204
-    * 100800120105
+    * 100800120101, 100800120102, 100800120103, 100800120104, 100800120105, 100800120201, 100800120202, 100800120203, 100800120204, 100800120205, 100800120206, 100800120207, 100800120208, 100800120209, 100800120301, 100800120302, 100800120303
 * Route COMID: 940080033
 
 ### 06280300 South Fork Shoshone near Valley
