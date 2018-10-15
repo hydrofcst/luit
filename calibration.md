@@ -108,27 +108,32 @@
 * Latitude 43°34'43",   Longitude 109°45'33" 
 * 43.57861111, -109.75916667
 * Hydrologic Unit 10080001
+* pfaf code for reach: 89699933
 
 ### 06224000 Bull Lake Creek ab Bull Lake
 * https://waterdata.usgs.gov/nwis/inventory/?site_no=06224000&agency_cd=USGS
 * Latitude 43°10'35.8",   Longitude 109°12'09.2" 
 * 43.17661111, -109.20250000
 * Hydrologic Unit 10080001
+* pfaf code for reach: 8969941175
 
 ### 06221400 Dinwoody Creek above Lakes nr Burris
 * https://waterdata.usgs.gov/wy/nwis/inventory/?site_no=06221400&agency_cd=
 * Latitude 43°20'46.2",   Longitude 109°24'31.6"
 * 43.34616667, -109.40888889
 * Hydrologic Unit 10080001
+* pfaf code for reach: 89699581173
 
 ### 06278500 Shell Creek nr Shell
 * https://waterdata.usgs.gov/nwis/inventory/?site_no=06278500&agency_cd=USGS 
 * Latitude 44°33'54",   Longitude 107°42'44"
 * 43.56500000, -107.71222222
 * Hydrologic Unit 10080010
+* pfaf code for reach: 89696697
 
 ###  06276500 Greybull R at Meeteetse
 * https://waterdata.usgs.gov/nwis/inventory/?site_no=06276500&agency_cd=USGS
 * Latitude 44°09'30.7",   Longitude 108°52'21.3"  
 * 44.15852778, -108.87250000  
 * Hydrologic Unit 10080009
+* pfaf code for reach: 89692571
