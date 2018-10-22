@@ -77,7 +77,10 @@
     * The main package of scripts is here: `/gpfs/fs1/work/manab/fcast/basins/route/dataprep/package.2015.12.16`
     * *NOT WORKING ON CHEYENNE DUE TO GDAL COMPATIBILITY ISSUES* 
     * On hydro-c1: `/d3/msaharia/SHARP/package.2015.12.16/qsub_poly2poly_mnb_basins.sh`
+    * Transfer HUC-12 gpkp to `/d3/msaharia/SHARP/package.2015.12.16/basins`
+    * A mapping file `poly.nc` will be formed in `/d3/msaharia/SHARP/package.2015.12.16/basins/*/HUC_12`
     * Creates mapping file in NHDPlus folder which I transfer back to Cheyenne
+    * Make `intersector` in mapping file from string to int64
 *  
 
 # Basins
@@ -98,10 +101,14 @@
 * 44.20788889, -109.55527778
 * Hydrologic Unit 10080013
 * COMID 12787632, PFAF 896865973
+* Outlet
+    * FLOWLINE COMID: 12788124, PFAF 896865973
+    * NHDPLUS HUC FEATUREID: 12788124, PFAF: 896865973
 * HUC-12s: 100800130203, 100800130201, 100800130202, 100800130106, 100800130104, 100800130105, 100800130103, 100800130102, 100800130101
 ![HUC 12](figures/06280300_huc_12.png)
 ![flowline](figures/06280300_nhdflowline.png)
 ![polygon](figures/06280300_nhdpoly.png)
+
 
 ### 06218500 Wind River nr Dubois
 * https://waterdata.usgs.gov/nwis/inventory/?site_no=06218500&agency_cd=USGS
