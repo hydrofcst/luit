@@ -84,7 +84,7 @@
 *  
 
 # Basins
-## 06279940 North Fork Shoshone near Wapiti [06279940.ipynb](06279940.ipynb)
+## 06279940 North Fork Shoshone near Wapiti. Analysis: [06279940.ipynb](06279940.ipynb)
 * https://waterdata.usgs.gov/wy/nwis/nwismap/?site_no=06279940&agency_cd=USGS
 * Latitude  44°28'11", Longitude 109°25'47", 
 * Lat, long: 44.4697222, -109.42972222
@@ -95,7 +95,7 @@
 ![HUC-12](figures/06279940_huc_12.png)
 ![NHDPlus polygon](figures/06279940_nhdplus_poly.png)
 
-### 06280300 South Fork Shoshone near Valley [06280300.ipynb](06280300.ipynb)
+### 06280300 South Fork Shoshone near Valley. Analysis: [06280300.ipynb](06280300.ipynb)
 
 * https://waterdata.usgs.gov/nwis/inventory/?site_no=06280300&agency_cd=USGS
 * Latitude 44°12'28.4",   Longitude 109°33'18.9"  
