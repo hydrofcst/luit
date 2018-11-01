@@ -165,3 +165,13 @@ canopyWettingFactor       | CWFTEMP|       0.0000 |       1.0000
 ![HUC-12](figures/06276500_huc_12.png)
 ![NHDplus poly](figures/06276500_nhdplus_poly.png)
 ![NHDplus flowline](figures/06276500_nhdplus_flowline.png) 
+
+# Run records
+Here, full = all fields turned on. trunc=only runoff
+
+## 06279940
+* Uncalibrated run (full): `/gpfs/fs1/work/manab/fcast/basins/06279940/output/uncalibrated`
+* State file for 20100101-20101001: `/gpfs/fs1/work/manab/fcast/basins/06279940/output/state20101001`
+* Restarted run for 20101001-20141231: `/gpfs/fs1/work/manab/fcast/basins/06279940/output/restartrun_20101001_20111231`
+* Full run for restart test: `/gpfs/fs1/work/manab/fcast/basins/06279940/output/restartfullrun`  
+
