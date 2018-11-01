@@ -1,6 +1,6 @@
 # More basins for calibration
 
-## Andy's list
+## Master list
 * 06218500    Wind River nr Dubois
 * 06221400    Dinwoody Creek above Lakes near Burris
 * 06224000    Bull Lake Creek above Bull Lake
@@ -31,7 +31,7 @@
 * 06279940    North Fork Shoshone River at Wapiti
 * 06285100    Shoshone near Lovell
 
-## Jordan's list 
+## Selected basins for calibration
 
 * 06279940 North Fork Shoshone near Wapiti (nearly undepleted)
 * 06280300 South Fork Shoshone near Valley (nearly undepleted)
@@ -82,6 +82,21 @@
     * Creates mapping file in NHDPlus folder which I transfer back to Cheyenne
     * Make `intersector` in mapping file from string to int64
 *  
+# Calibration 
+## Initial stages
+* Objective function: KGE
+* Parameters - 7
+```
+winterSAI                 | WLAITEMP|       0.0100 |       3.0000
+summerLAI                 | SLAITEMP|       0.0100 |      10.0000
+k_soil                    | KSOILTEMP|       1.d-07 |     100.d-07
+specificStorage           | SSTEMP|       1.d-05 |       1.d-07
+aquiferBaseflowRate       | ABFRTEMP|       0.0000 |       0.1000
+aquiferBaseflowExp        | ABFETEMP|       1.0000 |      10.0000
+canopyWettingFactor       | CWFTEMP|       0.0000 |       1.0000
+```
+
+
 
 # Basins
 ## 06279940 North Fork Shoshone near Wapiti
