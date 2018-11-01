@@ -1,6 +1,4 @@
-# More basins for calibration
-
-## Master list
+# Master list
 * 06218500    Wind River nr Dubois
 * 06221400    Dinwoody Creek above Lakes near Burris
 * 06224000    Bull Lake Creek above Bull Lake
@@ -31,7 +29,7 @@
 * 06279940    North Fork Shoshone River at Wapiti
 * 06285100    Shoshone near Lovell
 
-## Selected basins for calibration
+# Selected basins for calibration
 
 * 06279940 North Fork Shoshone near Wapiti (nearly undepleted)
 * 06280300 South Fork Shoshone near Valley (nearly undepleted)
@@ -95,7 +93,6 @@ aquiferBaseflowRate       | ABFRTEMP|       0.0000 |       0.1000
 aquiferBaseflowExp        | ABFETEMP|       1.0000 |      10.0000
 canopyWettingFactor       | CWFTEMP|       0.0000 |       1.0000
 ```
-
 
 
 # Basins
