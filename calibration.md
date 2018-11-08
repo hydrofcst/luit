@@ -80,20 +80,6 @@
     * Creates mapping file in NHDPlus folder which I transfer back to Cheyenne
     * Make `intersector` in mapping file from string to int64
 *  
-# Calibration 
-## Initial stages
-* Objective function: KGE
-* Parameters - 7
-```
-winterSAI                 | WLAITEMP|       0.0100 |       3.0000
-summerLAI                 | SLAITEMP|       0.0100 |      10.0000
-k_soil                    | KSOILTEMP|       1.d-07 |     100.d-07
-specificStorage           | SSTEMP|       1.d-05 |       1.d-07
-aquiferBaseflowRate       | ABFRTEMP|       0.0000 |       0.1000
-aquiferBaseflowExp        | ABFETEMP|       1.0000 |      10.0000
-canopyWettingFactor       | CWFTEMP|       0.0000 |       1.0000
-```
-
 
 # Basins
 ## 06279940 North Fork Shoshone near Wapiti
@@ -166,6 +152,26 @@ canopyWettingFactor       | CWFTEMP|       0.0000 |       1.0000
 ![NHDplus poly](figures/06276500_nhdplus_poly.png)
 ![NHDplus flowline](figures/06276500_nhdplus_flowline.png) 
 
+# Calibration 
+## Stage 1
+* Objective function: KGE
+* Parameters - 7
+```
+winterSAI                 | WLAITEMP|       0.0100 |       3.0000
+summerLAI                 | SLAITEMP|       0.0100 |      10.0000
+k_soil                    | KSOILTEMP|       1.d-07 |     100.d-07
+specificStorage           | SSTEMP|       1.d-05 |       1.d-07
+aquiferBaseflowRate       | ABFRTEMP|       0.0000 |       0.1000
+aquiferBaseflowExp        | ABFETEMP|       1.0000 |      10.0000
+canopyWettingFactor       | CWFTEMP|       0.0000 |       1.0000
+```
+## Stage 2
+
+## Calibration Scenarios
+* Scenario 1: 20101001-20110930, KGE with defaults, restart at 20101001
+* Scenario 2: 20100901-20130930, KGE with defaults, restart at 20130901
+* Scenario 3: 20101001-20120930, KGE with defaults, restart at 20101001
+
 # Run records
 Here, full = all fields turned on. trunc=only runoff
 
@@ -175,3 +181,4 @@ Here, full = all fields turned on. trunc=only runoff
 * Restarted run for 20101001-20141231: `/gpfs/fs1/work/manab/fcast/basins/06279940/output/restartrun_20101001_20111231`
 * Full run for restart test: `/gpfs/fs1/work/manab/fcast/basins/06279940/output/restartfullrun`  
 
+* 
